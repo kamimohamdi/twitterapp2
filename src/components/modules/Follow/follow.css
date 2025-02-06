@@ -1,0 +1,151 @@
+.follow_action {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.follow_action_real {
+  height: 100%;
+}
+
+.follow_action_top_back {
+  height: 38px;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid var(--twitter_dark_8);
+  border-bottom: none;
+}
+
+.follow_action_top_back_icon {
+  color: var(--twitter);
+  cursor: pointer;
+}
+
+.follow_action_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--twitter_dark_8);
+  border-bottom: none;
+  position: sticky;
+  top: 0;
+  background: var(--twitter_white);
+  z-index: 99;
+}
+
+.follow_action_top_item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid var(--twitter_dark_8);
+  text-decoration: none;
+  color: var(--twitter_dark_1);
+  cursor: pointer;
+}
+
+.follow_action_top_item_on {
+  color: var(--twitter);
+  text-shadow: 0 0 2px #1da1f2;
+  border-bottom: none;
+}
+
+.follow_action_top_item_followings {
+  border-right: 1px solid var(--twitter_dark_8);
+}
+
+.follow_action_top_item_followers {
+}
+
+.follow_action_users {
+  width: 100%;
+}
+
+.follow_action_users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.follow_action_user {
+  padding: 0 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20% 60% 20%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--twitter_dark_8);
+  border-top: 0;
+}
+
+.follow_action_user_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow_action_user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.follow_action_user_informations {
+  text-decoration: none;
+  color: var(--twitter_dark_1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.follow_action_user_informations a {
+  text-decoration: none;
+  color: var(--twitter_dark_1);
+  cursor: pointer;
+}
+
+.follow_action_user_information_id {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.follow_action_user_information_name {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.follow_action_user_follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow_action_user_follow button {
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid var(--twitter);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--twitter);
+  transition: all linear 0.2s;
+  background: var(--weitter_white);
+}
+.follow_action_user_follow button:hover {
+  background: var(--twitter);
+  opacity: 0.5;
+  color: var(--twitter_white);
+  border: 1px solid white;
+}

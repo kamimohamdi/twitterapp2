@@ -1,0 +1,149 @@
+.searchbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--twitter_dark_7);
+}
+.searchbar_top {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid var(--twitter_dark_7);
+  position: sticky;
+  top: 0;
+}
+.searchbar_top_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  background: var(--twitter_dark_7);
+  height: 80%;
+  border-radius: 25px;
+}
+
+.searchbar_top_search input {
+  width: 85%;
+  height: 100%;
+  border: none;
+  border-radius: 25px;
+  background: transparent;
+  outline: none;
+  padding: 0 5px;
+}
+
+.searchbar_top_search_icon {
+  width: 15%;
+  font-size: 1.5rem;
+  margin: auto 10px;
+  cursor: pointer;
+}
+.searchbar_recent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--twitter_dark_8);
+  border-top: none;
+}
+.searchbar_recent_top {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.searchbar_recent_top_icon {
+  color: var(--twitter);
+  cursor: pointer;
+}
+.searchbar_recent_users {
+  height: 130px;
+  background: white;
+  border-top: 1px solid var(--twitter_dark_8);
+  border-bottom: 1px solid var(--twitter_dark_8);
+  width: 100%;
+  padding: 16px 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0;
+}
+.searchbar_recent_users_box {
+  width: 84px;
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.searchbar_top a {
+  text-decoration: none;
+  color: var(--twitter);
+  cursor: pointer;
+}
+.searchbar_recent_users_box img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.searchbar_recent_users_box span {
+  font-size: 12px;
+}
+.searchbar_users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+  min-height: 70vh;
+}
+.searchbar_user {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--twitter_dark_7);
+  background: white;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: black;
+  border-top: none;
+}
+
+.searchbar_user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.searchbar_user_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.searchbar_user_info h6 {
+  font-size: 14px;
+}
+
+.searchbar_user_info span {
+  font-size: 12px;
+}

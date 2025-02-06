@@ -1,0 +1,41 @@
+.main_nav_bottom {
+  height: 49px;
+  background: var(--twitter_white);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid var(--twitter_dark_7);
+  display: none;
+  justify-content:space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main_nav_bottom li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_nav_bottom::before {
+  content: "";
+  background: var(--twitter);
+}
+
+.main_nav_bottom li:hover .main_nav_bottom_icon {
+  color: var(--twitter);
+}
+
+.main_nav_bottom_icon {
+  /* width: 23px;
+  height: 23px; */
+  color: var(--twitter_dark_5);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 530px) {
+  .main_nav_bottom {
+    display: flex;
+  }
+}

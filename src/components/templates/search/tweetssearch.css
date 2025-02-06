@@ -1,0 +1,36 @@
+.tweetssearch {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tweetssearch_top {
+  height: 50px;
+  width: 100%;
+  border: 1px solid var(--twitter_dark_8);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.tweetssearch_top span {
+  width: 30%;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tweetssearch_top_icon {
+  color: var(--twitter);
+  cursor: pointer;
+}
+
+.tweetssearch_tweets {
+  width: 100%;
+}

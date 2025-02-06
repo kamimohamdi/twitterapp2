@@ -1,0 +1,86 @@
+.main_header_tweet {
+  height: 138px;
+  border: 1px solid #f7f9fa;
+  border-top: none;
+  padding: 10px 1rem;
+  display: grid;
+  grid-template-columns: 60px auto;
+}
+
+.main_header_tweet_profile {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.main_header_tweet_profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+.main_header_tweet_write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.main_header_tweet_write_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_header_tweet_write_bottom ul {
+  display: flex;
+  list-style: none;
+}
+
+.main_header_tweet_write_bottom ul li {
+  width: 24px;
+  height: 24px;
+  margin: 0 4px;
+}
+
+.main_header_tweet_write_bottom_icon {
+  width: 100%;
+  height: 100%;
+  color: var(--twitter);
+  cursor: pointer;
+}
+
+.main_header_tweet_write_bottom button {
+  height: 39px;
+  width: 77px;
+  opacity: 50%;
+  font-weight: 700;
+  color: var(--twitter_white);
+  background: var(--twitter);
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 0 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main_header_tweet_write input {
+  border: none;
+  outline: none;
+  height: 70px;
+  width: 100%;
+}
+
+@media (max-width: 530px) {
+  .main_header_tweet {
+    display: none;
+  }
+}

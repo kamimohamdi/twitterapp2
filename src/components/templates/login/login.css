@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --twitter: #1da1f2;
+  --twitter_white: #ffffff;
+  --twitter_red: #f4245e;
+  --twitter_dark_1: #17202a;
+  --twitter_dark_2: #1c2733;
+  --twitter_dark_3: #283340;
+  --twitter_dark_4: #3a444c;
+  --twitter_dark_5: #5b7083;
+  --twitter_dark_6: #8899a6;
+  --twitter_dark_7: #ebeef0;
+  --twitter_dark_8: #f7f9fa;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+}
+.loginpage {
+  display: grid;
+  grid-template-columns: minmax(300px, 700px) minmax(250px, 800px);
+  margin: 0 auto;
+}
+
+.loginpage_logo {
+  background: var(--twitter);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.3s;
+}
+
+.container_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--twitter_white);
+  width: 80%;
+}
+
+.container_logo h1 {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.container_logo p {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.container_logo img {
+  width: 400px;
+  height: 400px;
+}
+.container_logo span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.loginpage_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container_login {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.login_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.login_top img {
+  width: 35px;
+  height: 30px;
+}
+.login_top span {
+  font-size: 12px;
+}
+.login_top span a {
+  color: var(--twitter);
+}
+
+.container_login h1 {
+  width: 100%;
+}
+
+.container_login form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container_login form label {
+  margin-bottom: 1rem;
+  font-weight: 800;
+  color: var(--twitter_dark_5);
+}
+.container_login form input {
+  width: 100%;
+  height: 57px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: var(--twitter_dark_7);
+  margin-bottom: 1rem;
+}
+
+.container_login form a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--twitter_dark_6);
+  margin-bottom: 1rem;
+}
+
+.login_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: var(--twitter_white);
+  border: none;
+  border-radius: 5px;
+  background: var(--twitter);
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.login_button:hover {
+  opacity: 0.5;
+}
+.container_login > span {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container_login > span::before {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: var(--twitter_dark_6);
+  position: absolute;
+  margin: auto 0;
+  right: 35px;
+}
+.container_login > span::after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: var(--twitter_dark_6);
+  position: absolute;
+  margin: auto 0;
+  left: 35px;
+}
+
+.login_google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_google a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 43px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.login_google a img {
+  margin-right: 5px;
+}
+
+.login_google_google {
+  background: var(--twitter_dark_7);
+  color: #5b7083;
+  margin-right: 20px;
+}
+
+.login_google_apple {
+  background: #000;
+  color: var(--twitter_white);
+}
+
+@media (max-width: 850px) {
+  .loginpage {
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+  .loginpage_logo {
+    display: none;
+    transform: translateX(-180px);
+  }
+}

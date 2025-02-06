@@ -1,0 +1,41 @@
+.load_chats {
+  padding: 0 1rem;
+}
+
+.load_chats_span {
+  display: flex;
+  /* height: 20px; */
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  margin: 1rem 0;
+}
+
+.load_chat_1 {
+  height: 100px;
+  width: 50%;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+.load_chat_2 {
+  height: 70px;
+  width: 30%;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+.load_chat_3 {
+  height: 80px;
+  width: 40%;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

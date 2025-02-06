@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --twitter: #1da1f2;
+  --twitter_white: #ffffff;
+  --twitter_red: #f4245e;
+  --twitter_dark_1: #17202a;
+  --twitter_dark_2: #1c2733;
+  --twitter_dark_3: #283340;
+  --twitter_dark_4: #3a444c;
+  --twitter_dark_5: #5b7083;
+  --twitter_dark_6: #8899a6;
+  --twitter_dark_7: #ebeef0;
+  --twitter_dark_8: #f7f9fa;
+}
+
+.danger {
+  color: var(--twitter_red) !important;
+}
+
+.container {
+  max-width: 1255px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(190px, 275px) minmax(400px, 600px) minmax(
+      275px,
+      355px
+    );
+  align-self: center;
+  background: var(--twitter_white);
+  height: 100vh;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.loading_styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 885px) {
+  .container_rightside {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: minmax(70px, 100px) minmax(430px, auto);
+  }
+
+  .leftside_top_menu li a span {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    grid-template-columns: auto;
+    padding: 0;
+  }
+}

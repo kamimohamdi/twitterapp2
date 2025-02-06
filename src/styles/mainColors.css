@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --twitter: #1da1f2;
+  --twitter_white: #ffffff;
+  --twitter_red: #f4245e;
+  --twitter_dark_1: #17202a;
+  --twitter_dark_2: #1c2733;
+  --twitter_dark_3: #283340;
+  --twitter_dark_4: #3a444c;
+  --twitter_dark_5: #5b7083;
+  --twitter_dark_6: #8899a6;
+  --twitter_dark_6: #ebeef0;
+  --twitter_dark_6: #f7f9fa;
+}

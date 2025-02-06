@@ -1,0 +1,128 @@
+.main_nav_write_direct_site {
+  width: 100%;
+  background: var(--twitter_white);
+  border: 1px solid var(--twitter_dark_7);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  bottom: 1rem;
+  right: 1rem;
+  width: 330px;
+  max-height: 350px;
+  min-height: 4rem;
+  border-radius: 5px;
+}
+
+.main_nav_write_direct_site_top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 43px;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--twitter_dark_7);
+}
+
+.main_nav_write_direct_site_midd {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transition: all linear 0.3s;
+}
+.main_nav_write_direct_site_midd_off {
+  transform: translateY(100%);
+  transition: all linear 0.3s;
+  visibility: hidden;
+  z-index: -5;
+  display: none;
+  opacity: 0;
+}
+.main_nav_write_direct_site_midd_on {
+  transform: translateY(0%);
+  transition: all linear 0.3s;
+  visibility: visible;
+}
+.main_nav_write_direct_site_middle {
+  padding: 0 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid var(--twitter_dark_7);
+  transition: all linear 0.3s;
+}
+
+.main_nav_write_direct_site_middle_images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.main_nav_write_direct_site_middle_images {
+  position: relative;
+}
+
+.main_nav_write_direct_site_middle_images span {
+  width: 10px;
+  height: 10px;
+  background: var(--twitter);
+  display: flex;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.main_nav_write_direct_site_middle > span {
+  font-size: 13px;
+  color: var(--twitter_dark_4);
+}
+.main_nav_write_direct_site_middle_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+  width: 58%;
+  overflow: hidden;
+}
+.main_nav_write_direct_site_middle_title > span {
+  display: flex;
+  font-size: 14px;
+}
+.main_nav_write_direct_site_middle_title > span span {
+  font-size: 11px;
+  color: var(--twitter_dark_5);
+  text-align: justify;
+  margin-left: 5px;
+}
+
+.main_nav_write_direct_site_middle_title p {
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+.main_nav_write_direct_site_top_icon {
+  color: var(--twitter);
+  width: 23px;
+  height: 23px;
+  font-weight: 2rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 885px) {
+  .main_nav_write_direct_site {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .main_nav_write_direct_site {
+    display: none;
+  }
+}

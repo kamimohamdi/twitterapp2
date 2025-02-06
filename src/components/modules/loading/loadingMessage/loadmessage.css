@@ -1,0 +1,42 @@
+.load_messages {
+  width: 100%;
+  padding: 0 1rem;
+  /* height: 50px; */
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  border: 1px solid var(--twitter_dark_7);
+  border-top: none;
+}
+
+.skeleton {
+  display: flex;
+  /* height: 20px; */
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  margin: 1rem 0;
+}
+.load_messages_top {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.load_messages_search {
+  width: 100%;
+  height: 30px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

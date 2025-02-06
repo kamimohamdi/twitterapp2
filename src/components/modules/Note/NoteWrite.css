@@ -1,0 +1,48 @@
+.main_nav_write {
+  width: 56px;
+  height: 53px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--twitter);
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(70px);
+  visibility: hidden;
+  /* opacity: 0; */
+  transition: all linear 0.4s;
+}
+
+.main_nav_write_icon {
+  color: var(--twitter_white);
+  font-size: 1.1rem;
+}
+
+.main_nav_write:hover .main_nav_write_icon {
+  animation: scale 1s ease;
+}
+
+@media (max-width: 530px) {
+  .main_nav_write {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

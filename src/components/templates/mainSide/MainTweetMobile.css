@@ -1,0 +1,103 @@
+.main_tweet_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background: var(--twitter_white);
+  min-height: 100vh;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  transition: all linear 0.1s;
+}
+
+.main_tweet_mobile_cansel {
+  transform: translateY(100%);
+  visibility: hidden;
+}
+.main_tweet_mobile_on {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.main_tweet_mobile_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 1rem;
+}
+
+.main_tweet_mobile_top span {
+  font-size: 17px;
+  color: var(--twitter);
+  cursor: pointer;
+}
+
+.main_tweet_mobile_top button {
+  width: 67px;
+  height: 34px;
+  background: var(--twitter);
+  opacity: 0.5;
+  color: var(--twitter_white);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_tweet_mobile_middle {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 16% 86%;
+  position: absolute;
+  top: 50px;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+.main_tweet_mobile_write textarea {
+  border: none;
+  height: auto;
+  width: 100%;
+  outline: none;
+}
+
+.main_tweet_mobile_bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  border-top: 1px solid var(--twitter_dark_7);
+  position: fixed;
+  height: 50px;
+  padding: 0 1rem;
+  bottom: 0;
+}
+
+.main_tweet_mobile_bottom li {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.main_tweet_mobile_bottom_icon {
+  font-size: 1.4rem;
+  color: var(--twitter);
+}
+
+.main_tweet_mobile_profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+@media (max-width: 530px) {
+  .main_tweet_mobile {
+    visibility: visible;
+  }
+}
